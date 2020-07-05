@@ -4,7 +4,9 @@ var deviceManager: DeviceManager = DeviceManager.new()
 var resolutionWidth :float
 var resolutionHeight :float
 
+# make sure to edit scale everytime we enter the scene tree
 func _enter_tree():
+	# an easier way to do this is to in fact have the scaling value set in a Global Class/Singleton where we can pull the scale fraction/float value
 	var scaleWidth = deviceManager.newDeviceWidth / Resolution.gameDevWidth()
 
 	var windowSize = OS.get_window_size()
