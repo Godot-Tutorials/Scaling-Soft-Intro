@@ -18,6 +18,7 @@ func _enter_tree():
 	self.scale.x = 1 * (scaleWidth)
 	self.scale.y = 1 * (scaleWidth)
 	
+	# code to center our image on game screen view
 	self.position.x = windowSize.x / 2.0
 	self.position.y = windowSize.y / 2.0
 
